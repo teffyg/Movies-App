@@ -1,0 +1,2 @@
+C:\Users\Teffy Giordano\source\repos\teffyg\AngularProjects\11-moviesApp\obj\x86\Debug\Movies-App.csprojAssemblyReference.cache
+C:\Users\Teffy Giordano\source\repos\teffyg\AngularProjects\11-moviesApp\obj\x86\Debug\Movies-App.csproj.CoreCompileInputs.cache

@@ -1,0 +1,19 @@
+<div class="card bg-dark mt-3">
+  <img src="https://image.tmdb.org/t/p/w500{{movie.back_img}}" style="opacity: 20%;" class="card-img" >
+    <div class="card-img-overlay row ">
+      <div class="col-md-4">
+        <img class="card-img" [src]="movie.poster | noimage" alt="Card image cap"  style="width: 80%;">
+      </div>
+      <div class="col-md-8">
+        <h1 class="card-title" style="display:flex; justify-content: space-between;">{{movie.name}}
+          <button type="button" class="btn btn-danger" style="max-height: 48px"  (click)="goBack()"><i class="fa fa-undo mr-2 ml-2" style="font-size: 25px;"></i></button>
+        </h1>
+      <div>
+        <span *ngFor="let genre of movie.genres" class="badge badge-pill badge-success mr-1 mb-4">{{genre.name}}</span>
+      </div>
+        <h3><i class="fa fa-star"></i> {{movie.rate}}<small>/10</small></h3>
+        <p class="card-text">{{movie.text}}</p>
+        <p class="card-text"><small class="text-muted">Released: {{movie.release_date | date: 'M/d/y'}}</small></p>
+      </div>
+    </div>
+  </div>

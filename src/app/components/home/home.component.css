@@ -1,0 +1,23 @@
+.no-margin {
+    margin: 0px !important;
+    border: 0px;
+}
+
+.card-columns{
+    column-gap: 0px;
+}
+
+.card-img {
+    border-radius: 0px;
+}
+
+.card-img-overlay {
+    display: flex !important;
+    align-items: flex-end;
+    padding: 0px;
+}
+
+.cnt-title {
+    background-color: black;
+    opacity: 0.6;
+}

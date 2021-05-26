@@ -1,0 +1,53 @@
+
+<div class="container mt-5">
+    <h1>Playing Now</h1>
+
+    <div class="card-columns" >
+        <div  *ngFor="let movie of playingMovies" type="button" class="card no-margin" [routerLink]="['/movie', movie.id]">
+            <img [src]="movie.backdrop_path | noimageback" class="card-img" style="max-height:208.42px" >
+        
+            <div class="card-img-overlay ">
+                <div class="container cnt-title">
+                    <h4 class="card-title" style="color:white">{{movie.title}}</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="container mt-5">
+    <h1>Popular Movies</h1>
+
+    <div class="card-columns" >
+        <div *ngFor="let movie of popularMovies" type="button" class="card no-margin" [routerLink]="['/movie', movie.id]">
+            <img [src]="movie.backdrop_path | noimageback"  class="card-img" style="max-height:208.42px" > 
+            <div class="card-img-overlay ">
+                <div class="container cnt-title">
+                    <h4 class="card-title" style="color:white">{{movie.title}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="container mt-5">
+    <h1>Popular for Kids</h1>
+
+    <div class="card-columns"  >
+        <div *ngFor="let movie of popularKids" type="button" class="card no-margin" [routerLink]="['/movie', movie.id]" >
+            <img [src]="movie.backdrop_path | noimageback"  class="card-img" style="max-height:208.42px">
+        
+            <div class="card-img-overlay ">
+                <div class="container cnt-title">
+                    <h4 class="card-title" style="color:white">{{movie.title}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+

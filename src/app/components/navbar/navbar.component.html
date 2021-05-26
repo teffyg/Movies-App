@@ -1,0 +1,7 @@
+<nav class="navbar navbar-dark bg-success">
+    <a class="navbar-brand" href="home"><i class="fa fa-film mr-2"></i>MoviesApp</a>
+    <div class="form-inline" >
+        <input  name="keyword" type="text" #keyword (keyup.enter)="searchMovies(keyword.value)" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="button" (click)="searchMovies(keyword.value)">Search</button>
+    </div>
+</nav>
