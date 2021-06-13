@@ -20,7 +20,6 @@ export class HomeComponent implements OnInit {
         })
     this.ms.getPopular()
         .subscribe( data =>{
-          // console.log(data);
           this.popularMovies = data.slice(0,6);
         })
 
